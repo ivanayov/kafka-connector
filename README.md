@@ -26,12 +26,12 @@ This sample is setup for use on Swarm, but the application code will also work o
 Usage for Swarm:
 
 * Deploy this sample using ./build.sh
-* Deploy or update a function so it has a label of `topic=faas-request` or some other topic
+* Deploy or update a function so it has an annotation `topic=faas-request` or some other topic
 
 As an example:
 
 ```shell
-$ faas store deploy figlet --label topic="faas-request"
+$ faas store deploy figlet --annotation topic="faas-request"
 ```
 
 The function can advertise more than one topic by using a comma-separated list i.e. `topic=topic1,topic2,topic3`
